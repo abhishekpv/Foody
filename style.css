@@ -40,7 +40,7 @@ ul{
     padding: 0 10%;
 }
 .hero img{
-    height: 400px;
+    height: 30vw;
     object-fit: contain;
     
 }
@@ -168,4 +168,23 @@ box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #
 .footer >p{
     font-size: 10px;
     text-align: center;
+}
+
+@media(max-width:700px){
+    
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .hero h1{
+        font-size: 30px;
+    }
+    .heroText{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        
+    }
+    .menu{
+        grid-template-columns: 1fr;
+    }
 }
